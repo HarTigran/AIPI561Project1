@@ -11,8 +11,7 @@ This algorithm is pre-trained to answer questions based on a supplied context.
 1) Create a virtual environment.
 
 ```
-cd Image-Embeddings-CLI-Tool/
-virtualenv venv
+python3 -m venv venv
 ```
 
 2) Activate the virtual environment.
