@@ -6,9 +6,9 @@ format:
 		black *.py
 
 lint:
-		pylint --disable=R,C,broad-except, hello.py
+		pylint --disable=R,C,broad-except, q_and_a.py
 
 test:
-		python -m pytest -vv --cov=hello test_hello.py
+		python -m pytest -vv --cov=q_and_a test_q_and_a.py
 
 all: install lint test

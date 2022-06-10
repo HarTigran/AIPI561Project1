@@ -3,3 +3,6 @@ pytest
 click
 black
 pytest-cov
+fire
+torch
+transformers
