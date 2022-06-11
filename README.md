@@ -32,7 +32,7 @@ make all
 pip install -r requirements.txt
 ```
 
-## Usage
+### Usage
 
 To use the pre-trained algorithm. Provide the question and the context in the following manner:
 
