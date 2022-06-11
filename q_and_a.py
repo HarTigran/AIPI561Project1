@@ -2,7 +2,7 @@ import fire
 import torch
 
 
-def tester(input):
+def tester(input_qn):
     from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 
     tokenizer = AutoTokenizer.from_pretrained("distilbert-base-cased-distilled-squad")
@@ -11,7 +11,7 @@ def tester(input):
         "distilbert-base-cased-distilled-squad"
     )
 
-    question, text = input.split(",")
+    question, text = input_qn.split(",")
 
     inputs = tokenizer(question, text, return_tensors="pt")
 
@@ -28,5 +28,5 @@ def tester(input):
     # return question, text
 
 
-if __name__ == __main__.str:
+if __name__ == "__main__":
     fire.Fire(tester)
